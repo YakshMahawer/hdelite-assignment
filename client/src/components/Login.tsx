@@ -13,7 +13,6 @@ const Login: React.FC = () => {
   const [otpSent, setOtpSent] = useState(false);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
-  const [showOtp, setShowOtp] = useState(false);
   const [keepLoggedIn, setKeepLoggedIn] = useState(false);
 
   const navigate = useNavigate();
