@@ -1,0 +1,175 @@
+/* Container */
+.login-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Left Side Form */
+.login-left {
+  flex: 1;
+  background-color: white;
+  padding: 0px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* Title & Subtitle */
+.login-left h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: -10px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+/* Inputs */
+.input-field {
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+/* Button */
+.get-otp-button {
+  background-color: #2563eb;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.get-otp-button:disabled {
+  background-color: #9db9f3;
+  cursor: not-allowed;
+}
+
+.get-otp-button:hover:not(:disabled) {
+  background-color: #1d4ed8;
+}
+.otp-toggle-btn {
+  margin-left: -40px; /* Pull the button inside the input */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  height: 40px;
+  vertical-align: middle;
+}
+/* Error Box */
+.error-box {
+  background-color: #fee2e2;
+  color: #991b1b;
+  padding: 10px 15px;
+  border: 1px solid #fca5a5;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* Toggle Text */
+.signin-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.signin-link {
+  color: #2563eb;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Divider */
+.or-divider {
+  text-align: center;
+  margin: 20px 0;
+  color: #999;
+  font-size: 14px;
+}
+
+/* Google Login */
+.google-login {
+  margin-top: 10px;
+}
+
+/* Right Side Image */
+.login-right {
+  flex: 1;
+  display: block;
+}
+
+.login-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .login-right {
+    display: none;
+  }
+
+  .login-left {
+    padding: 40px 20px;
+  }
+}
+
+.resend-otp-button {
+  color: #2563eb;
+  padding: 10px;
+  margin-top: -10px;
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color #004ffa 0.3s;
+}
+
+.checkbox {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #374151;
+}
+
+.checkbox input {
+  margin-right: 8px;
+}
+
+.toggle-otp {
+  background: none;
+  border: none;
+  color: #2563eb;
+  font-size: 13px;
+  margin-top: 5px;
+  cursor: pointer;
+  text-decoration: underline;
+}

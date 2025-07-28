@@ -1,0 +1,88 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* Container */
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Add todo input */
+.add-section {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.add-section input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  font-size: 1rem;
+  background: white;
+}
+
+.add-section button {
+  padding: 0 1rem;
+  background: #4acb87;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+/* Todo list */
+.todo-list {
+  list-style: none;
+}
+
+.todo-item {
+  background: white;
+  margin-bottom: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+.todo-item .delete-btn {
+  background: transparent;
+  border: none;
+  color: #ff6b6b;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .header h2 {
+    font-size: 1rem;
+  }
+  .add-section input,
+  .add-section button,
+  .todo-item {
+    font-size: 0.95rem;
+  }
+}
