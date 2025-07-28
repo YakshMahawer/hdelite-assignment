@@ -161,7 +161,6 @@ const Login: React.FC = () => {
           <>
               <input
                 className="input-field"
-                type={showOtp ? 'text' : 'password'}
                 placeholder="Enter OTP"
                 value={otp}
                 onChange={(e) => setOtp(e.target.value)}
