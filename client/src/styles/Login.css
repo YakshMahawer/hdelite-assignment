@@ -111,6 +111,7 @@
 
 /* Google Login */
 .google-login {
+  align-self: center;
   margin-top: 10px;
 }
 
