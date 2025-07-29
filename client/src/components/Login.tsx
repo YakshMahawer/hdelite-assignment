@@ -16,6 +16,12 @@ const Login: React.FC = () => {
   const [keepLoggedIn, setKeepLoggedIn] = useState(false);
 
   const navigate = useNavigate();
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      navigate("/welcome");
+    }
+  }, []);
 
   const isValidEmail = (email: string) =>
     /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
